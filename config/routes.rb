@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     patch "/recipes/:id" => "recipes#update"
     delete "/recipes/:id" => "recipes#destroy"
     # Favorites
+    get "/favorites" => "favorites#index"
     post "/favorites" => "favorites#create"
     # Users
     post "/users" => "users#create"

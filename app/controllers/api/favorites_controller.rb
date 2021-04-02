@@ -1,5 +1,10 @@
 class Api::FavoritesController < ApplicationController
 
+  def index
+    @favs = Favorite.all
+    render "index.json.jb"
+  end
+
   def create
     fav = Favorite.new(
       user_id: params[:user_id],
