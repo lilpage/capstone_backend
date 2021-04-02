@@ -6,9 +6,9 @@ class Api::FavoritesController < ApplicationController
       recipe_id: params[:recipe_id]
     )
     if fav.save
-      render json: {message: "Favorited"}
+      render json: { message: "Favorited" }, status: :created
     else
-      render json: {message: "uhoh!"}
+      render json: { errors: fav.errors.full_messages }, status: :bad_request
     end
   end
 

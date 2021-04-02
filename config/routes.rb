@@ -12,5 +12,9 @@ Rails.application.routes.draw do
     delete "/recipes/:id" => "recipes#destroy"
     # Favorites
     post "/favorites" => "favorites#create"
+    # Users
+    post "/users" => "users#create"
+    # Sessions
+    post "/sessions" => "sessions#create"
   end
 end

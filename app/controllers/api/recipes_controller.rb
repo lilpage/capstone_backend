@@ -18,9 +18,9 @@ class Api::RecipesController < ApplicationController
     )
     #happy/sad
     if @recipe.save
-      render "show.json.jb"
+      render "show.json.jb", status: :created
     else
-      render json: {message: "uh oh!"}
+      render json: { errors: @recipe.errors.full_messages }, status: :bad_request
     end
   end
 
@@ -34,7 +34,7 @@ class Api::RecipesController < ApplicationController
     if @recipe.save
       render "show.json.jb"
     else
-      render json: {message: "uh oh!"}
+      render json: { errors: @recipe.errors.full_messages }, status: :bad_request
     end
   end
 
