@@ -8,7 +8,7 @@
 
 User.create!(name: "Lil", email:"lil@example.com", password:"password")
 
-Recipe.create!(name:"G&T",ingredients:["gin","tonic water","simple syrup","lime"], directions:"mix. drink.")
-Recipe.create!(name:"Paloma",ingredients:["tequila","soda water","grapefruit juice","simple syrup","lime"], directions:"mix. drink.")
+Recipe.create!(name:"G&T",ingredients: "['gin','tonic water','simple syrup','lime']" , directions:"mix. drink.")
+Recipe.create!(name:"Paloma",ingredients: "['tequila','soda water','grapefruit juice','simple syrup','lime']" , directions:"mix. drink.")
 
 Favorite.create!(user_id:1,recipe_id:1)

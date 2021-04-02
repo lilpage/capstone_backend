@@ -1,0 +1,6 @@
+{
+  id: recipe.id,
+  name: recipe.name,
+  ingredients: recipe.ingredients,
+  directions: recipe.directions
+}
