@@ -17,4 +17,13 @@ class Api::FavoritesController < ApplicationController
     end
   end
 
+  def destroy
+    fav = Fav.find_by(id: params[:id])
+    if fav.destroy
+      render json: {message: "Successfully delete!"}
+    else
+      render json: { errors: fav.errors.full_messages }, status: :bad_request
+    end
+  end
+
 end
