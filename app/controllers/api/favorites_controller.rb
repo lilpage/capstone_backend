@@ -1,7 +1,8 @@
 class Api::FavoritesController < ApplicationController
+  before_action :authenticate_user
 
   def index
-    @favs = Favorite.all
+    @favs = Favorite.all #.find_by(user_id: current_user.id)
     render "index.json.jb"
   end
 
@@ -18,7 +19,7 @@ class Api::FavoritesController < ApplicationController
   end
 
   def destroy
-    fav = Fav.find_by(id: params[:id])
+    fav = Favorite.find_by(id: params[:id])
     if fav.destroy
       render json: {message: "Successfully delete!"}
     else

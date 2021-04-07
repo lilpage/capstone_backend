@@ -6,9 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create!(name: "Lil", email:"lil@example.com", password:"password")
+User.create!(name: "Lil", email:"lil@example.com", password:"password", admin: true)
 
 Recipe.create!(name:"G&T",ingredients: "['gin','tonic water','simple syrup','lime']" , directions:"mix. drink.")
 Recipe.create!(name:"Paloma",ingredients: "['tequila','soda water','grapefruit juice','simple syrup','lime']" , directions:"mix. drink.")
+Recipe.create!(name:"Red",ingredients: "['red']" , directions:"mix. drink, mmm colors. good!")
+Recipe.create!(name:"Blue",ingredients: "['blue']" , directions:"just drink.")
+Recipe.create!(name:"Green",ingredients: "['green']" , directions:"just drink.")
+Recipe.create!(name:"White",ingredients: "['red','blue','green']" , directions:"just drink.")
 
 Favorite.create!(user_id:1,recipe_id:1)
