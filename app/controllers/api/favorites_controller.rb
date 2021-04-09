@@ -2,7 +2,7 @@ class Api::FavoritesController < ApplicationController
   before_action :authenticate_user
 
   def index
-    @favs = Favorite.all #.find_by(user_id: current_user.id)
+    @favs = Favorite.where(user_id: current_user.id)
     render "index.json.jb"
   end
 
