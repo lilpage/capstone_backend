@@ -17,4 +17,13 @@ class Api::UsersController < ApplicationController
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
   end
+
+  def destroy
+    user = User.find_by(id: params[:id])
+    if user.destroy
+      render json: { message: "We're sad to see you go! Goodbye!" }
+    else
+      render json: {errors: user.errors.full_messages }, status: :bad_request
+    end
+  end
 end
