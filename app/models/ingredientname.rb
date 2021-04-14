@@ -1,0 +1,2 @@
+class Ingredientname < ApplicationRecord
+end
