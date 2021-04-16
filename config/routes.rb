@@ -24,8 +24,8 @@ Rails.application.routes.draw do
     get "/ingredients" => "ingredients#index"
     get "/ingredients/:id" => "ingredients#show"
     # IngredientList
-    get "/ingredientlist" => "ingredientlist#index"
-    post "/ingredientlist" => "ingredientlist#create"
-    delete "/ingredientlist/:id" => "ingredientlist#destroy"
+    get "/ingredientlists" => "ingredient_lists#index"
+    post "/ingredientlists" => "ingredient_lists#create"
+    delete "/ingredientlists/:id" => "ingredient_lists#destroy"
   end
 end

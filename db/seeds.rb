@@ -34,23 +34,24 @@ Ingredient.create!(name:"green",category:"yes",in_stock: true)
 
 # Ingredients in Recipes, through associations
 # G&T
-IngredientList.create!(ingredient_id: 1, recipe_id: 1)
-IngredientList.create!(ingredient_id: 2, recipe_id: 1)
-IngredientList.create!(ingredient_id: 3, recipe_id: 1)
-IngredientList.create!(ingredient_id: 5, recipe_id: 1)
+IngredientList.create!(ingredient_id: 1, recipe_id: 1, amount: "half a ")
+IngredientList.create!(ingredient_id: 2, recipe_id: 1, amount: "2 shots of ")
+IngredientList.create!(ingredient_id: 3, recipe_id: 1, amount: "like most of a ")
+IngredientList.create!(ingredient_id: 5, recipe_id: 1, amount: "half a jib of ")
 # Paloma
-IngredientList.create!(ingredient_id: 1, recipe_id: 2)
-IngredientList.create!(ingredient_id: 7, recipe_id: 2)
-IngredientList.create!(ingredient_id: 6, recipe_id: 2)
-IngredientList.create!(ingredient_id: 5, recipe_id: 2)
-IngredientList.create!(ingredient_id: 4, recipe_id: 2)
+IngredientList.create!(ingredient_id: 1, recipe_id: 2, amount: "most of a ")
+IngredientList.create!(ingredient_id: 7, recipe_id: 2, amount: "2 shots of ")
+IngredientList.create!(ingredient_id: 6, recipe_id: 2, amount: "2 shots of ")
+IngredientList.create!(ingredient_id: 5, recipe_id: 2, amount: "a jib of ")
+IngredientList.create!(ingredient_id: 4, recipe_id: 2, amount: "1 cup of ")
+# DUMMY DUMMY DUMMY DUMMY
 # Dummy Red
-IngredientList.create!(ingredient_id: 8, recipe_id: 3)
+IngredientList.create!(ingredient_id: 8, recipe_id: 3, amount: "a bit of ")
 # Dummy Blue
-IngredientList.create!(ingredient_id: 9, recipe_id: 4)
+IngredientList.create!(ingredient_id: 9, recipe_id: 4, amount: "a lot of ")
 # Dummy Green
-IngredientList.create!(ingredient_id: 10, recipe_id: 5)
+IngredientList.create!(ingredient_id: 10, recipe_id: 5, amount: "a ton of ")
 # Dummy White
-IngredientList.create!(ingredient_id: 8, recipe_id: 6)
-IngredientList.create!(ingredient_id: 9, recipe_id: 6)
-IngredientList.create!(ingredient_id: 10, recipe_id: 6)
+IngredientList.create!(ingredient_id: 8, recipe_id: 6, amount: "one third")
+IngredientList.create!(ingredient_id: 9, recipe_id: 6, amount: "one third")
+IngredientList.create!(ingredient_id: 10, recipe_id: 6, amount: "one third")
