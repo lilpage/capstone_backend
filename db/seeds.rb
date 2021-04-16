@@ -10,12 +10,12 @@
 User.create!(name: "Lil", email:"lil@example.com", password:"password", admin: true)
 
 # All recipes on site
-Recipe.create!(name:"G&T", directions:"mix. drink.")
-Recipe.create!(name:"Paloma", directions:"mix. drink.")
-Recipe.create!(name:"Red", directions:"mix. drink, mmm colors. good!")
-Recipe.create!(name:"Blue", directions:"just drink.")
-Recipe.create!(name:"Green", directions:"just drink.")
-Recipe.create!(name:"White", directions:"just drink.")
+Recipe.create!(name:"G&T", directions: ["mix.", "drink."])
+Recipe.create!(name:"Paloma", directions: ["mix.", "drink."])
+Recipe.create!(name:"Red", directions: ["just drink."])
+Recipe.create!(name:"Blue", directions:["just drink."])
+Recipe.create!(name:"Green", directions:["just drink."])
+Recipe.create!(name:"White", directions: ["mix.", "drink, mmm colors. good!"])
 
 #Dummy
 Favorite.create!(user_id:1,recipe_id:1)
