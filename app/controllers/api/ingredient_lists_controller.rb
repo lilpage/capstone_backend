@@ -1,6 +1,6 @@
 class Api::IngredientListsController < ApplicationController
   def index
-    @list_items = IngredientList.all
+    @ingredient_lists = IngredientList.all
     render "index.json.jb"
   end
 

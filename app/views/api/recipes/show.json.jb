@@ -1,1 +1,7 @@
-render partial: "recipe.json.jb", locals: {recipe:@recipe}
+recipe = render partial: "recipe.json.jb", locals: {recipe:@recipe}
+
+
+# BUG
+recipe[:ingredient_lists] = @recipe.ingredient_lists.map do |ingredient_list|
+  render partial: "/api/ingredientlists/ingredient_list.json.jb", locals: { ingredient_list:ingredient_list }
+end
