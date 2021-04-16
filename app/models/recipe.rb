@@ -1,5 +1,5 @@
 class Recipe < ApplicationRecord
   has_many :favorites
-  has_many :ingredientlists
-  has_many :ingredients, through: :ingredientlists
+  has_many :ingredient_lists
+  has_many :ingredients, through: :ingredient_lists
 end

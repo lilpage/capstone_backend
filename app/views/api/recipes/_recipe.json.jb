@@ -3,5 +3,5 @@
   name: recipe.name,
   directions: recipe.directions,
   user: current_user,
-#   ingredients: recipe.ingredientlist.ingredients
+  ingredients: recipe.ingredients
 }

@@ -1,4 +1,5 @@
 {
+  id: ingredient.id,
   name: ingredient.name,
   category: ingredient.category,
   in_stock: ingredient.in_stock,
