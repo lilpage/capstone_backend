@@ -3,5 +3,5 @@
   recipe_id: item.recipe_id,
   ingredient_id: item.ingredient_id,
   amount: item.amount,
-  ingredients: item.ingredient,
+  ingredients: item.ingredient.name,
 }

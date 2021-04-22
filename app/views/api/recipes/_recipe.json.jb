@@ -4,5 +4,5 @@
   directions: recipe.directions,
   user: current_user,
   # ingredients: recipe.ingredients,
-  # lists: recipe.ingredient_lists,
+  # ingredient_lists: recipe.ingredient_lists,
 }

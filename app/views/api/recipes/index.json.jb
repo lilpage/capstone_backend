@@ -2,9 +2,7 @@ recipes = @recipes.map do |recipe|
   render partial: "recipe.json.jb", locals: {recipe:recipe}
 end
 
-
-
-# recipes[:ingredient_lists] = @recipes.ingredient_lists do |list|
-#   render partial
-
+# Broken
+# recipes[:ingredient_lists] = @recipes.ingredient_lists.map do |ingredient_list|
+#     render partial: "/api/ingredientlists/ingredient_list.json.jb", locals: { ingredient_list: ingredient_list }
 # end
