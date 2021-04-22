@@ -1,6 +1,5 @@
-recipe = render partial: "recipe.json.jb", locals: {recipe:@recipe}
+r = render partial: "recipe.json.jb", locals: {recipe:@recipe}
 
-# I dont think so:
-# recipe[:ingredient_lists] = @recipe.ingredient_lists.map do |ingredient_list|
-#   render partial: "/api/ingredientlists/ingredient_list.json.jb", locals: { ingredient_list:ingredient_list }
-# end
+r[:ingredient_lists] = @recipe.ingredient_lists.map do |ingredient_list|
+  render partial: "/api/ingredient_lists/ingredient_list", locals: { item: ingredient_list }
+end
