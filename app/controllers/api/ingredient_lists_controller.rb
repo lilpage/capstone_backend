@@ -5,7 +5,7 @@ class Api::IngredientListsController < ApplicationController
   end
 
 
-  # # Do I even need these????
+  # # Do I even need these???? I mean probably not
   # def create
   #   list_item = IngredientList.new(
   #     ingredient_id: params[:ingredient_id],
