@@ -1,5 +1,9 @@
+# sets vairable
 r = render partial: "recipe.json.jb", locals: {recipe:@recipe}
 
+# propends array
 r[:ingredient_lists] = @recipe.ingredient_lists.map do |ingredient_list|
   render partial: "/api/ingredient_lists/ingredient_list", locals: { item: ingredient_list }
 end
+# calls variable
+r
