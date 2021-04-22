@@ -1,0 +1,3 @@
+@fridges.map do |fridge|
+  render partial: "fridge.json.jb", locals: {fridge:fridge}
+end

@@ -8,6 +8,7 @@
 
 # Dummy admin
 User.create!(name: "Lil", email:"lil@example.com", password:"password", admin: true)
+User.create!(name: "Ghost", email:"ghost@example.com", password:"password", admin: false)
 
 # All recipes on site
 Recipe.create!(name:"G&T", directions: ["mix.", "drink."])
@@ -62,3 +63,10 @@ Tag.create!(name:"dummmy", recipe_id:3)
 Tag.create!(name:"dummmy", recipe_id:4)
 Tag.create!(name:"dummmy", recipe_id:5)
 Tag.create!(name:"dummmy", recipe_id:6)
+
+#Fridge
+Fridge.create(ingredient_id:1, user_id: 1, in_stock:true)
+Fridge.create(ingredient_id:2, user_id: 1, in_stock:true)
+Fridge.create(ingredient_id:3, user_id: 1, in_stock:false)
+Fridge.create(ingredient_id:1, user_id: 2, in_stock:true)
+Fridge.create(ingredient_id:2, user_id: 2, in_stock:false)
