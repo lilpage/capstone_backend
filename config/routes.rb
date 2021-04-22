@@ -27,5 +27,7 @@ Rails.application.routes.draw do
     get "/ingredientlists" => "ingredient_lists#index"
     post "/ingredientlists" => "ingredient_lists#create"
     delete "/ingredientlists/:id" => "ingredient_lists#destroy"
+    # Tags
+    get "/tags" => "tags#index"
   end
 end

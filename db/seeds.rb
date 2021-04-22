@@ -21,16 +21,16 @@ Recipe.create!(name:"White", directions: ["mix.", "drink, mmm colors. good!"])
 Favorite.create!(user_id:1,recipe_id:1)
 
 # All available ingredients
-Ingredient.create!(name:"lime",category:"yes",in_stock: true)
-Ingredient.create!(name:"gin",category:"yes",in_stock: true)
-Ingredient.create!(name:"tonic water",category:"yes",in_stock: true)
-Ingredient.create!(name:"soda water",category:"yes",in_stock: true)
-Ingredient.create!(name:"simple syrup",category:"yes",in_stock: true)
-Ingredient.create!(name:"grapefruit juice",category:"yes",in_stock: true)
-Ingredient.create!(name:"tequila",category:"yes",in_stock: true)
-Ingredient.create!(name:"red",category:"yes",in_stock: true)
-Ingredient.create!(name:"blue",category:"yes",in_stock: true)
-Ingredient.create!(name:"green",category:"yes",in_stock: true)
+Ingredient.create!(name:"lime",category:"yes")
+Ingredient.create!(name:"gin",category:"yes")
+Ingredient.create!(name:"tonic water",category:"yes")
+Ingredient.create!(name:"soda water",category:"yes")
+Ingredient.create!(name:"simple syrup",category:"yes")
+Ingredient.create!(name:"grapefruit juice",category:"yes")
+Ingredient.create!(name:"tequila",category:"yes")
+Ingredient.create!(name:"red",category:"yes")
+Ingredient.create!(name:"blue",category:"yes")
+Ingredient.create!(name:"green",category:"yes")
 
 # Ingredients in Recipes, through associations
 # G&T
@@ -55,3 +55,10 @@ IngredientList.create!(ingredient_id: 10, recipe_id: 5, amount: "a ton of ")
 IngredientList.create!(ingredient_id: 8, recipe_id: 6, amount: "one third")
 IngredientList.create!(ingredient_id: 9, recipe_id: 6, amount: "one third")
 IngredientList.create!(ingredient_id: 10, recipe_id: 6, amount: "one third")
+
+# Tags
+Tag.create!(name:"sweet", recipe_id:2)
+Tag.create!(name:"dummmy", recipe_id:3)
+Tag.create!(name:"dummmy", recipe_id:4)
+Tag.create!(name:"dummmy", recipe_id:5)
+Tag.create!(name:"dummmy", recipe_id:6)
