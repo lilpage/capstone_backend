@@ -1,8 +1,11 @@
-recipes = @recipes.map do |recipe|
-  render partial: "recipe.json.jb", locals: {recipe:recipe}
-end
+@recipes.map do |recipe|
+  # sets a new variable
+  r = render partial: "recipe.json.jb", locals: {recipe:recipe}
 
-# Broken
-# recipes[:ingredient_lists] = @recipes.ingredient_lists.map do |ingredient_list|
-#     render partial: "/api/ingredientlists/ingredient_list.json.jb", locals: { ingredient_list: ingredient_list }
-# end
+  # propends the "ingredient_lists" array onto each recipe (the block vairable) 
+  r[:ingredient_lists] = recipe.ingredient_lists.map do |ingredient_list|
+    # call the specific view file
+      render partial: "/api/ingredient_lists/ingredient_list", locals: { item: ingredient_list }
+  end
+  r # calling the variable
+end
