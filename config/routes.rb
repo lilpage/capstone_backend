@@ -33,6 +33,7 @@ Rails.application.routes.draw do
     get "/fridges" => "fridges#index"
     get "/fridges/:id" => "fridges#index"
     post "/fridges" => "fridges#create"
-    delete "/fridges" => "fridges#destroy"
+    patch "/fridges/:id" => "fridges#update"
+    delete "/fridges/:id" => "fridges#destroy"
   end
 end

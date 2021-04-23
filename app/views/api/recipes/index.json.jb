@@ -10,7 +10,7 @@
   end
   
   # ADDS TAGS
-  # propends the "ingredient_lists" array onto each recipe (the block vairable) 
+  # propends the "tags" array onto each recipe (the block vairable) 
   r[:tags] = recipe.tags.map do |tag|
     # call the specific view file
       render partial: "/api/tags/tag", locals: { tag:tag }

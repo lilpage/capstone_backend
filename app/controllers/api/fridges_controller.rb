@@ -17,6 +17,17 @@ class Api::FridgesController < ApplicationController
     end
   end
 
+  def update
+    @fridge = Fridge.find_by(id: params[:id])
+    @fridge.toggle!(:in_stock)
+    @fridge.save
+    if @fridge.in_stock
+      render json: {message: "In stock"}
+    else
+      render json: {message: "Out of stock"}
+    end
+  end
+
   def destroy
     fridge = Fridge.find_by(id: params[:id])
     if fridge.delete

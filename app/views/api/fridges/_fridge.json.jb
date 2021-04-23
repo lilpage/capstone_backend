@@ -3,4 +3,5 @@
   ingredient_id: fridge.ingredient_id,
   user_id: fridge.user_id,
   in_stock: fridge.in_stock,
+  ingredient: fridge.ingredient.name,
 }
