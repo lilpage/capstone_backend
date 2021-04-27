@@ -1,7 +1,7 @@
 class Api::FridgesController < ApplicationController
 
   def index
-    @fridges = Fridge.all #where(user_id: current_user.id)
+    @fridges = Fridge.where(user_id: current_user.id)
     render "index.json.jb"
   end
 
