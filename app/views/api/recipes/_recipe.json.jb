@@ -3,4 +3,5 @@
   name: recipe.name,
   directions: recipe.directions,
   user: current_user,
+  image: recipe.image,
 }
