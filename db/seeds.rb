@@ -69,25 +69,63 @@ Ingredient.create!(name:"fresh lime slices",category:"garnish")
 # Ingredients in Recipes, through associations
 # Rusty Nail
 IngredientList.create!(ingredient_id: 1, recipe_id: 1, amount: "2oz")
+IngredientList.create!(ingredient_id: 15, recipe_id: 1, amount: "0.75oz")
+IngredientList.create!(ingredient_id: 32, recipe_id: 1, amount: "")
 #Rob Roy
 IngredientList.create!(ingredient_id: 1, recipe_id: 2, amount: "2.5oz")
+IngredientList.create!(ingredient_id: 16, recipe_id: 2, amount: "0.75oz")
+IngredientList.create!(ingredient_id: 17, recipe_id: 2, amount: "2 dashes")
+IngredientList.create!(ingredient_id: 30, recipe_id: 2, amount: "")
 #Brown Derby
 IngredientList.create!(ingredient_id: 2, recipe_id: 3, amount: "2oz")
+IngredientList.create!(ingredient_id: 25, recipe_id: 3, amount: "1oz")
+IngredientList.create!(ingredient_id: 20, recipe_id: 3, amount: "0.75oz")
+IngredientList.create!(ingredient_id: 31, recipe_id: 3, amount: "")
 #Mint Julep
 IngredientList.create!(ingredient_id: 2, recipe_id: 4, amount: "2.5oz")
+IngredientList.create!(ingredient_id: 19, recipe_id: 4, amount: "0.5oz")
+IngredientList.create!(ingredient_id: 28, recipe_id: 4, amount: "About 8")
+IngredientList.create!(ingredient_id: 29, recipe_id: 4, amount: "")
 #Mojito
 IngredientList.create!(ingredient_id: 3, recipe_id: 5, amount: "2oz")
+IngredientList.create!(ingredient_id: 19, recipe_id: 5, amount: "1oz")
+IngredientList.create!(ingredient_id: 26, recipe_id: 5, amount: "0.75oz")
+IngredientList.create!(ingredient_id: 10, recipe_id: 5, amount: "1oz")
+IngredientList.create!(ingredient_id: 28, recipe_id: 5, amount: "About 8")
+IngredientList.create!(ingredient_id: 29, recipe_id: 5, amount: "")
+IngredientList.create!(ingredient_id: 33, recipe_id: 5, amount: "")
 #Mai-Tai
 IngredientList.create!(ingredient_id: 6, recipe_id: 6, amount: "1oz")
 IngredientList.create!(ingredient_id: 7, recipe_id: 6, amount: "1oz")
+IngredientList.create!(ingredient_id: 26, recipe_id: 6, amount: "0.75oz")
+IngredientList.create!(ingredient_id: 9, recipe_id: 6, amount: "0.5oz")
+IngredientList.create!(ingredient_id: 18, recipe_id: 6, amount: "0.75oz")
+IngredientList.create!(ingredient_id: 29, recipe_id: 6, amount: "")
 #Gin & Tonic
 IngredientList.create!(ingredient_id: 4, recipe_id: 7, amount: "2oz")
+IngredientList.create!(ingredient_id: 11, recipe_id: 7, amount: "4oz")
+IngredientList.create!(ingredient_id: 33, recipe_id: 7, amount: "")
 #Pink Lady
 IngredientList.create!(ingredient_id: 4, recipe_id: 8, amount: "1.5oz")
+IngredientList.create!(ingredient_id: 27, recipe_id: 8, amount: "0.75oz")
+IngredientList.create!(ingredient_id: 14, recipe_id: 8, amount: "0.5oz")
+IngredientList.create!(ingredient_id: 19, recipe_id: 8, amount: "0.25oz")
+IngredientList.create!(ingredient_id: 21, recipe_id: 8, amount: "0.25oz")
+IngredientList.create!(ingredient_id: 22, recipe_id: 8, amount: "1")
 #Moscow Mule
 IngredientList.create!(ingredient_id: 5, recipe_id: 9, amount: "1.5oz")
+IngredientList.create!(ingredient_id: 12, recipe_id: 9, amount: "1.5oz")
+IngredientList.create!(ingredient_id: 19, recipe_id: 9, amount: "0.5oz")
+IngredientList.create!(ingredient_id: 26, recipe_id: 9, amount: "0.75oz")
+IngredientList.create!(ingredient_id: 33, recipe_id: 9, amount: "")
 #Pimm's Cup
 IngredientList.create!(ingredient_id: 8, recipe_id: 10, amount: "2oz")
+IngredientList.create!(ingredient_id: 27, recipe_id: 10, amount: "0.75oz")
+IngredientList.create!(ingredient_id: 19, recipe_id: 10, amount: "0.5oz")
+IngredientList.create!(ingredient_id: 13, recipe_id: 10, amount: "")
+IngredientList.create!(ingredient_id: 23, recipe_id: 10, amount: "")
+IngredientList.create!(ingredient_id: 33, recipe_id: 10, amount: "")
+IngredientList.create!(ingredient_id: 29, recipe_id: 10, amount: "")
 
 
 # Tags

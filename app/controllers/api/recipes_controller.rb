@@ -16,8 +16,8 @@ class Api::RecipesController < ApplicationController
   def create
     @recipe = Recipe.new(
       name: params[:name],
-      ingredients: params[:ingredients],
       directions: params[:directions],
+      image: params[:image],
     )
     #happy/sad
     if @recipe.save
@@ -28,11 +28,10 @@ class Api::RecipesController < ApplicationController
   end
 
   def update 
-    # or statement bug?
     @recipe = Recipe.find_by(id: params[:id])
     @recipe.name = params[:name] || @recipe.name
-    @recipe.ingredients = params[:ingredients] || @recipe.ingredients
     @recipe.directions = params[:directions] || @recipe.directions
+    @recipe.image = params[:image] || @recipe.image
     #happy/sad
     if @recipe.save
       render "show.json.jb"
