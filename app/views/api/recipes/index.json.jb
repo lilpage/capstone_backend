@@ -16,5 +16,12 @@
       render partial: "/api/tags/tag", locals: { tag:tag }
   end
 
+  if current_user
+    if recipe.favorites.length > 0
+      r[:favorited] = true
+    else
+      r[:favorited] = false 
+    end
+  end
   r # calling the variable
 end
