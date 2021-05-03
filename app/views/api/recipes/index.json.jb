@@ -10,12 +10,16 @@
   end
   
   # ADDS TAGS
-  # propends the "tags" array onto each recipe (the block vairable) 
   r[:tags] = recipe.tags.map do |tag|
-    # call the specific view file
       render partial: "/api/tags/tag", locals: { tag:tag }
   end
 
+  #ADDS FAVORITES
+  r[:favorites] = recipe.favorites.map do |favorite|
+      render partial: "/api/favorites/favorite", locals: { fav:favorite }
+  end
+
+  # Creates "favorited" attr
   if current_user
     if recipe.favorites.length > 0
       r[:favorited] = true
@@ -23,5 +27,6 @@
       r[:favorited] = false 
     end
   end
+  
   r # calling the variable
 end

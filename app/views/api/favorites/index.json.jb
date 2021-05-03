@@ -1,12 +1,3 @@
 @favs.map do |fav|
-  {
-    id: fav.id,
-    user_id: fav.user_id,
-    recipe_id: fav.recipe_id,
-    name: fav.recipe.name,
-    ingredients: fav.recipe.ingredients,
-    directions: fav.recipe.directions,
-    image: fav.recipe.image,
-  }
-
+  render partial: "favorite.json.jb", locals: { fav: fav }
 end
