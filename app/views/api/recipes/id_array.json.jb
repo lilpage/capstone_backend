@@ -1,5 +1,6 @@
-@id_array.map do |id|
+@id_array.map do |recipe|
   {
-  id: id
+    # ingredient_id: recipe.ingredient_lists.ingredient_id,
+    data: @id_array 
   }
 end

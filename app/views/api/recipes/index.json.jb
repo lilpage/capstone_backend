@@ -19,7 +19,7 @@
       render partial: "/api/favorites/favorite", locals: { fav:favorite }
   end
 
-  # Creates "favorited" attr
+  # Creates "favorited" attribute
   if current_user
     if recipe.favorites.length > 0
       r[:favorited] = true
@@ -27,6 +27,14 @@
       r[:favorited] = false 
     end
   end
+
+  # if current_user
+  #   if recipe.favorites.length > 0
+  #     r[:possible] = true
+  #   else
+  #     r[:possible] = false 
+  #   end
+  # end
   
   r # calling the variable
 end

@@ -1,0 +1,5 @@
+{
+  ingredient_id: item.ingredient_id,
+}
+
+# Simplier partial for rendering on simple_index in recipes

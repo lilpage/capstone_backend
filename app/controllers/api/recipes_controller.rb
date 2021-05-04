@@ -50,15 +50,10 @@ class Api::RecipesController < ApplicationController
     end
   end
 
+  # Sends only the name, id and ingreident ids of recipes, a simpiler view.
   def array
-    @id_array = []
-    recipes = Recipe.all
-    recipes.map do |recipe|
-      @id_array << recipe.ingredient_lists[0]["ingredient_id"]
-    end
-    # @id_array << recipes[0].ingredient_lists[0]["ingredient_id"]
-    # @id_array << recipes[0].ingredient_lists[1]["ingredient_id"]
-    render "id_array.json.jb"
+    @recipes = Recipe.all
+    render "simple_index.json.jb"
   end
 
 end

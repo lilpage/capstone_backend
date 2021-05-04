@@ -1,0 +1,16 @@
+@recipes.map do |recipe|
+  # sets a new variable
+  r = render partial: "recipe_simple.json.jb", locals: {recipe:recipe}
+
+  # ADDS INGREDIENTS
+  # propends the "ingredient_lists" array onto each recipe (the block vairable) 
+  r[:ingredient_lists] = recipe.ingredient_lists.map do |ingredient_list|
+    # call the specific view file
+      render partial: "/api/ingredient_lists/ingredient_list_simple", locals: { item: ingredient_list }
+  end
+
+  r # calling the variable
+end
+
+
+# This is a view created specifically to be a simplified verision of the whole index, to be used for checking against current users fridge.
