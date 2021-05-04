@@ -1,0 +1,5 @@
+@id_array.map do |id|
+  {
+  id: id
+  }
+end

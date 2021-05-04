@@ -36,6 +36,14 @@ class Api::FridgesController < ApplicationController
       render json: {errors: @fridge.errors.full_messages}, status: bad_request
     end
   end
-
+  
+  def array
+    @id_array = []
+    fridges = Fridge.where(user_id: current_user.id)
+    fridges.map do |fridge|
+      @id_array << fridge.ingredient_id
+    end
+    render "id_array.json.jb"
+  end
 
 end

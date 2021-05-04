@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   namespace :api do
     # Recipes
     get "/recipes" => "recipes#index"
+    get "/recipes/array" => "recipes#array"
     post "/recipes" => "recipes#create"
     get "/recipes/:id" => "recipes#show"
     patch "/recipes/:id" => "recipes#update"
@@ -31,6 +32,7 @@ Rails.application.routes.draw do
     get "/tags" => "tags#index"
     # Fridges
     get "/fridges" => "fridges#index"
+    get "fridges/array" => "fridges#array"
     get "/fridges/:id" => "fridges#index"
     post "/fridges" => "fridges#create"
     patch "/fridges/:id" => "fridges#update"
