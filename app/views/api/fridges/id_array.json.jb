@@ -1,5 +1,5 @@
 @id_array.map do |id|
   {
-  id: id
+  ingredient_id: id
   }
 end
