@@ -11,5 +11,14 @@ end
 r[:tags] = @recipe.tags.map do |tag|
   render partial: "/api/tags/tag", locals: { tag:tag }
 end
+# Creates "favorited" attribute
+if current_user
+  if @recipe.favorites.length > 0
+    r[:favorited] = true
+  else
+    r[:favorited] = false 
+  end
+end
+
 # calls variable
 r
