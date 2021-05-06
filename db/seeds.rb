@@ -23,7 +23,7 @@ Recipe.create!(name:"Moscow Mule", directions: "Shake with ice. Strain over ice 
 Recipe.create!(name:"Pimm's Cup", directions: "Muddle 2 cucumber slices and simple syrup. Fill collins glass with ice, sliced strawberry, and remaining cucumber slices. Add pimm's and lemon juice, shake with ice. Strain over collins glass. Top with ginger ale. Garnish with mint sprig.", image: "https://www.saveur.com/app/uploads/2019/01/25/AFGGQMOFTX3IGLUAHID6NBCD7E.jpg?width=785")
 
 #Dummy
-Favorite.create!(user_id:1,recipe_id:1)
+Favorite.create!(user_id:1,recipe_id:8)
 
 # All available ingredients
 #Bases 
@@ -65,6 +65,9 @@ Ingredient.create!(name:"lemon peel",category:"garnish")
 Ingredient.create!(name:"grapefruit peel",category:"garnish")
 Ingredient.create!(name:"orange peel",category:"garnish")
 Ingredient.create!(name:"fresh lime slices",category:"garnish")
+# Example for presentation
+#34
+Ingredient.create!(name:"campari",category:"mixer")
 
 # Ingredients in Recipes, through associations
 # Rusty Nail
