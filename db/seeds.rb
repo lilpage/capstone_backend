@@ -1,10 +1,5 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 
 # Admin / non-admin User
 User.create!(name: "Lil", email:"lil@example.com", password:"password", admin: true)
@@ -133,16 +128,15 @@ IngredientList.create!(ingredient_id: 29, recipe_id: 10, amount: "")
 
 # Tags
 Tag.create!(name:"simple", recipe_id:7)
-Tag.create!(name:"other", recipe_id:10)
 
 #Fridge
 Fridge.create(ingredient_id:1, user_id: 1, in_stock:true)
 Fridge.create(ingredient_id:4, user_id: 1, in_stock:true)
-Fridge.create(ingredient_id:27, user_id: 1, in_stock:true)
 Fridge.create(ingredient_id:14, user_id: 1, in_stock:true)
+Fridge.create(ingredient_id:15, user_id: 1, in_stock:true)
 Fridge.create(ingredient_id:19, user_id: 1, in_stock:true)
 Fridge.create(ingredient_id:21, user_id: 1, in_stock:true)
 Fridge.create(ingredient_id:22, user_id: 1, in_stock:true)
-Fridge.create(ingredient_id:3, user_id: 1, in_stock:false)
-Fridge.create(ingredient_id:1, user_id: 2, in_stock:true)
-Fridge.create(ingredient_id:2, user_id: 2, in_stock:false)
+Fridge.create(ingredient_id:27, user_id: 1, in_stock:true)
+Fridge.create(ingredient_id:32, user_id: 1, in_stock:true)
+
